@@ -1,0 +1,93 @@
+.wrapper {
+    --search-border-radius: 92px;
+    --search-height: 46px;
+    --search-button-width: 52px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: var(--default-layout-header-height);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    background-color: var(--white-color);
+}
+
+.inner {
+    height: 100%;
+    width: var(--default-layout-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--default-layout-horizontal-spacer);
+}
+
+.logo-link {
+    display: flex;
+}
+
+// Actions
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0 4px;
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.upload-btn,
+.login-btn {
+    font-weight: 700;
+}
+
+.action-btn,
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.action-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #161823;
+
+    & + .action-btn {
+        margin-left: 16px;
+    }
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    left: 16px;
+    padding: 0px 6px;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white-color);
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+}
+
+.user-avatar {
+    object-fit: cover;
+    border-radius: 100rem;
+    margin-left: 24px;
+}
